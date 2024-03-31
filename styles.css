@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; /* White background */
+  color: #333333; /* Dark text color */
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #6a0dad; /* Purple navbar background */
+  overflow: hidden; /* Clear float */
+  margin-bottom: 20px; /* Add margin to create space between navbar and content */
+}
+
+.logo {
+  color: #ffffff; /* White text color for logo */
+  font-size: 24px;
+  font-weight: bold;
+  float: left;
+  margin-right: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  float: right;
+  margin-top: 20px;
+}
+
+.nav-links li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  color: #ffffff; /* White text color for navbar links */
+  text-decoration: none;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+.section-with-background {
+  background-image: url("photo-1.jpg"); /* Replace 'background-image.jpg' with the path to your image */
+  background-size: cover; /* Cover the entire background */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  position: relative; /* Set position to relative to position absolute child elements */
+  min-height: calc(
+    100vh - 72px
+  ); /* Set minimum height to viewport height minus navbar height */
+  background-attachment: fixed; /* Make the background image fixed */
+  margin-top: -20px; /* Adjust margin-top to remove space between navbar and background */
+}
+
+.section-content {
+  position: absolute; /* Position the content absolutely */
+  top: 50%; /* Align the content vertically */
+  left: 50%; /* Align the content horizontally */
+  transform: translate(-50%, -50%); /* Center the content */
+  text-align: center; /* Center-align text */
+  color: #ffffff; /* White text color */
+  padding: 20px;
+  font-size: 25px; /* Add padding for better readability */
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between; /* Spread items across the container */
+  align-items: center; /* Center items vertically */
+}
+
+#about h2 {
+  text-align: center; /* Center-align the title "About Us" */
+}
+
+.about-text,
+.about-profile {
+  flex-basis: 45%; /* Set width for both sections */
+  text-align: center; /* Center-align text within both sections */
+}
+
+.profile-picture {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-picture img {
+  border-radius: 50%;
+  width: 200px; /* Increased size */
+  height: 200px; /* Increased size */
+  border: 5px solid #6a0dad; /* Purple border */
+  box-sizing: border-box; /* Include border in size calculation */
+}
+
+#services h2 {
+  text-align: center;
+}
