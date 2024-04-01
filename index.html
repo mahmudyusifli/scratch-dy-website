@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your Purple and White Website</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header>
@@ -20,7 +24,9 @@
         </div>
       </nav>
     </header>
-
+    <div id="progress-bar-container">
+      <div id="progress-bar"></div>
+    </div>
     <section id="home" class="section-with-background">
       <div class="section-content">
         <h1>Welcome Purple and White Website</h1>
@@ -54,14 +60,6 @@
               provident itaque, obcaecati neque aperiam sit adipisci veniam
               reprehenderit nemo accusantium. Beatae numquam adipisci minima
               praesentium illo molestias sint ut corporis alias. Adipisci saepe
-              eligendi magni! Aut ratione vitae inventore sint! Tenetur quos
-              consectetur nostrum vero mollitia doloribus ullam alias cum
-              veritatis quam quidem voluptatem reprehenderit, illum aliquam
-              fugit corporis recusandae. Sint. Harum provident, fugiat deleniti
-              sunt aperiam atque repellendus assumenda vitae maiores illo,
-              recusandae iure, nulla omnis fugit odit necessitatibus minus.
-              Atque natus accusamus fuga quis ad, porro inventore repudiandae
-              deserunt!
             </p>
           </div>
           <div class="about-profile">
@@ -75,50 +73,70 @@
       </section>
 
       <section id="services">
-        <h2>Services</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae
-          urna et risus bibendum tincidunt. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Maiores sapiente est sed temporibus
-          aliquam commodi nobis magni voluptates? Quam laudantium omnis
-          molestias dolores hic quos libero eligendi quo? Voluptatibus, veniam.
-          Cumque quaerat iure, magni earum eligendi temporibus quod
-          exercitationem! Nulla odit cumque qui corrupti repellat placeat omnis
-          ea ab, ipsam alias, distinctio quia sit, commodi natus amet hic
-          consequuntur praesentium? Ea, ut eos temporibus fugit magni sit ab
-          consequuntur nihil voluptatem rerum minus. Architecto vel explicabo
-          asperiores cum corrupti nisi, dolor, cumque voluptates assumenda quia,
-          quos iure numquam culpa iste. Quos maxime quam rerum tempore,
-          molestias ducimus ipsum minus cupiditate vitae provident quasi
-          necessitatibus sint repudiandae sed, quidem repellendus omnis ad.
-          Voluptatum sint vitae molestias! Sed beatae unde ducimus optio! Ipsa
-          quas nihil porro. Consequuntur iusto, placeat ad provident, minus nisi
-          autem repellendus ducimus aperiam sequi consequatur recusandae magnam,
-          exercitationem fugit officiis ipsam! At maiores assumenda id laborum
-          maxime odit. Architecto, nisi maxime consequatur voluptatum, molestiae
-          accusantium neque vitae et voluptatem dolore dignissimos corrupti
-          porro praesentium quo saepe repudiandae. Dolorem dignissimos
-          recusandae, assumenda earum explicabo commodi debitis dicta illum
-          vitae! Tempore ducimus quaerat facilis quasi, ipsam beatae similique
-          perferendis laudantium ab dignissimos omnis obcaecati at. Modi
-          exercitationem accusantium libero suscipit harum magni, quibusdam amet
-          delectus illo sunt temporibus, aspernatur sint. Neque nemo laboriosam
-          minima, maxime vero architecto nihil aperiam sapiente quas suscipit
-          consectetur delectus, aut maiores, officiis obcaecati. Tempore autem
-          veniam delectus et vel. Ducimus non nobis natus. Asperiores, ut!
-        </p>
+        <h2>Our Services</h2>
+        <div class="services-container">
+          <div class="service">
+            <img src="service1.jpg" alt="Service 1" />
+            <h3>Service 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              qui, cum perspiciatis, voluptatibus ratione eum sequi laudantium
+              sapiente ullam facere suscipit fugiat debitis, quaerat nobis eos
+              ipsum in optio maxime.
+            </p>
+          </div>
+          <div class="service">
+            <img src="service2.jpg" alt="Service 2" />
+            <h3>Service 2</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Veritatis, autem? Nemo voluptas eveniet provident soluta
+              cupiditate totam sequi possimus reprehenderit excepturi distinctio
+              eaque laudantium eligendi consequatur, corporis harum magni atque!
+            </p>
+          </div>
+          <div class="service">
+            <img src="service3.jpeg" alt="Service 3" />
+            <h3>Service 3</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+              perspiciatis itaque deserunt consectetur explicabo cum! Aut odit
+              ad dignissimos sed quibusdam suscipit at cum odio, id possimus!
+              Quis, omnis mollitia!
+            </p>
+          </div>
+        </div>
       </section>
 
+      <h2 id="contactt">Contact</h2>
       <section id="contact">
-        <h2>Contact</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae
-          urna et risus bibendum tincidunt.
-        </p>
+        <div class="contact-container">
+          <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form>
+              <input type="text" placeholder="Your Name" />
+              <input type="email" placeholder="Your Email" />
+              <textarea placeholder="Your Message"></textarea>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+          <div class="contact-info">
+            <h3>Reach Us</h3>
+            <p>Email: example@example.com</p>
+            <p>Phone: +1234567890</p>
+            <p>Address: 123 Street, City, Country</p>
+            <div class="social-icons">
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-whatsapp"></a>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <footer>
-        <p>&copy; 2024 Your Website. All rights reserved.</p>
+      <footer class="footer">
+        <p>&copy; 2024 Website. No rights reserved.</p>
+        <p>Mahmud Yusifli</p>
       </footer>
     </div>
 
