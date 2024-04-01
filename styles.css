@@ -1,9 +1,10 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #ffffff; /* White background */
-  color: #333333; /* Dark text color */
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333333;
 }
 
 .container {
@@ -13,77 +14,85 @@ body {
 }
 
 header {
-  background-color: #6a0dad; /* Purple navbar background */
-  overflow: hidden; /* Clear float */
-  margin-bottom: 20px; /* Add margin to create space between navbar and content */
+  background-color: #6a0dad;
+  overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .logo {
-  color: #ffffff; /* White text color for logo */
+  color: #ffffff;
   font-size: 24px;
   font-weight: bold;
   float: left;
   margin-right: 20px;
+  transition: all 0.3s ease;
 }
 
 .nav-links {
   list-style: none;
   float: right;
-  margin-top: 20px;
+  margin-top: 18px;
 }
 
 .nav-links li {
   display: inline;
   margin-left: 20px;
+  transition: all 0.3s ease;
 }
 
 .nav-links li a {
-  color: #ffffff; /* White text color for navbar links */
+  color: #ffffff;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .nav-links li a:hover {
-  text-decoration: underline;
+  color: #9c9a9a;
+}
+
+.nav-links li a:hover,
+.nav-links li a:focus {
+  transform: translateY(-5px);
+  color: #6b6b6b;
 }
 
 .section-with-background {
-  background-image: url("photo-1.jpg"); /* Replace 'background-image.jpg' with the path to your image */
-  background-size: cover; /* Cover the entire background */
-  background-position: center; /* Center the background image */
-  background-repeat: no-repeat; /* Do not repeat the background image */
-  position: relative; /* Set position to relative to position absolute child elements */
-  min-height: calc(
-    100vh - 72px
-  ); /* Set minimum height to viewport height minus navbar height */
-  background-attachment: fixed; /* Make the background image fixed */
-  margin-top: -20px; /* Adjust margin-top to remove space between navbar and background */
+  background-image: url("background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: calc(100vh - 72px);
+  background-attachment: fixed;
+  margin-top: -20px;
 }
 
 .section-content {
-  position: absolute; /* Position the content absolutely */
-  top: 50%; /* Align the content vertically */
-  left: 50%; /* Align the content horizontally */
-  transform: translate(-50%, -50%); /* Center the content */
-  text-align: center; /* Center-align text */
-  color: #ffffff; /* White text color */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
   padding: 20px;
-  font-size: 25px; /* Add padding for better readability */
+  font-size: 25px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .about-content {
   display: flex;
-  justify-content: space-between; /* Spread items across the container */
-  align-items: center; /* Center items vertically */
+  justify-content: space-between;
+  align-items: center;
 }
 
 #about h2 {
-  text-align: center; /* Center-align the title "About Us" */
+  text-align: center;
 }
 
 .about-text,
 .about-profile {
-  flex-basis: 45%; /* Set width for both sections */
-  text-align: center; /* Center-align text within both sections */
+  flex-basis: 45%;
+  text-align: center;
 }
 
 .profile-picture {
@@ -93,12 +102,174 @@ header {
 
 .profile-picture img {
   border-radius: 50%;
-  width: 200px; /* Increased size */
-  height: 200px; /* Increased size */
-  border: 5px solid #6a0dad; /* Purple border */
-  box-sizing: border-box; /* Include border in size calculation */
+  width: 150px;
+  height: 150px;
+  border: 5px solid #6a0dad;
+  box-sizing: border-box;
+  transition: transform 0.3s;
+}
+.profile-picture img {
+  border-radius: 50%;
+  width: 230px;
+  height: 250px;
+  border: 3px solid #6a0dad;
+  box-sizing: border-box;
+}
+
+.profile-picture img:hover {
+  transform: scale(1.1);
 }
 
 #services h2 {
   text-align: center;
+}
+#services {
+  text-align: center;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #6a0dad;
+}
+
+.service:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.service:hover img {
+  transform: scale(1.1);
+}
+
+.service h3 {
+  margin-top: 10px;
+}
+
+.service p {
+  margin-top: 10px;
+}
+
+.service h3,
+.service p {
+  color: white;
+}
+
+#contact {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contact-form,
+.contact-info {
+  width: 45%;
+  padding: 20px;
+}
+
+.contact-form h2,
+.contact-info h3 {
+  color: #6a0dad;
+}
+
+.contact-form form input[type="text"],
+.contact-form form input[type="email"],
+.contact-form form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form form textarea {
+  height: 120px;
+}
+
+.contact-form form button {
+  background-color: #6a0dad;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form form button:hover {
+  background-color: #4a0777;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 24px;
+  color: #6a0dad;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #4a0777;
+}
+
+#contactt {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  background-color: #6a0dad;
+  width: 100%;
+  height: 80px;
+}
+
+.footer p {
+  color: white;
+  margin-bottom: 20px;
+}
+
+#progress-bar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px; /* Adjust height as needed */
+  background-color: #ccc; /* Background color of the progress bar */
+}
+
+#progress-bar {
+  height: 100%;
+  width: 0;
+  background-color: #6a0dad; /* Color of the progress indicator */
 }
